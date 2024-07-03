@@ -2,93 +2,120 @@
 margin: 0;
 padding: 0;
 font-family: 'poppins', sans-serif;
-box-sizing: border-box;
-}
-/*----------banner with navbar start-------*/
 
+}
+
+/*--------navbar start------*/
+.navbar{
+    
+    margin: 0;
+   width: 100%;
+   height: 50px;
+   background-color:black;
+
+
+}
+.navbar .logo a{
+    color:white;
+    font-family:  Cambria;
+    font-size:25px;
+    font-weight: bolder;
+    margin-left: 10px;
+    text-decoration: none;
+    font-family:Garamond;
+
+}
+
+.navbar  ul{
+  float: right;
+}
+
+.navbar ul li{
+   display: inline-block;
+   text-decoration: none;
+   padding: 0 20px;
+   
+
+}
+.navbar  ul li a{
+text-decoration: none;
+color:white;
+font-family:Garamond;
+}
+.navbar  ul li a:hover{
+    background-color: white;
+    color: #111;
+
+}
+#checkbtn{
+    float: right;
+    font-size: 20px;
+    color: aliceblue;
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0;
+
+}
+
+
+
+@media(max-width:840px) {
+    #checkbtn{
+       display: block;
+
+    }
+  #check:checked ~ #checkbtn i::before{
+    content:"\f00d";
+  }
+
+    .navbar  ul{
+        width: 100%;
+        height: 100vh;    
+        position: fixed;
+        top:50px;
+        left: -100%;
+        transition: 0.5s;
+        background:#111;
+    }
+   .navbar ul li{
+       margin-top: 20px;
+       display: block;
+       text-align: center;
+   }
+}
+
+#social-media a{
+   color:aliceblue;
+   text-decoration: none;
+   margin-right:15px;
+}
+/*--------navbar end------*/
 
 
 .banner{
-    width:100%;
-    min-height:500px;
-    background-image:url(images/study\ .jpg);
+    background-image: url(images/study\ .jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-        
+    width: 100%;
+    height:100vh;
+    display: grid;
+  place-items: center;
+    color: aliceblue;
 }
-.banner .test-container{
-    position: absolute;
-    color: rgb(255, 255, 255);
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0.5rem;
-    text-align: center;
-}
-.banner .test-container h1{
+
+.banner .text h1{
     font-family:Garamond;
-    font-size: 100px;
-
+    font-size: 90px;
 }
-
-.banner .test-container p{
+.banner .text h5{
     font-family:Garamond;
-    font-size: 40px;
-
+    font-size: 30px;
 }
 
-
-
-
-nav{
-    background-color: rgba(220, 227, 241, 0.779);
-    width: 97vw;
-    height: 14vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    border-radius: 40px;
-    display: flex;
-    margin: 1vw;
-
-  
-}
-
-.logo{
-  width: 80px;
-  cursor: pointer;
-  margin-left: 50px;
-
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: transparent;
-    border-radius: 20px;
-
-}
-nav ul li{
-    margin: 2vw;
-    display: inline-block;
-    
-}
-
-nav ul li a{
-    text-decoration: none;
-    color:black;
-    padding: 10px;
-    border-radius: 5px;
-    border:solid;   
-}
-nav ul li a:hover{
-    background-color:black;
-    color: azure;
-    animation: pushup 1s 1s alternate infinite;
-
-}
 
 
 #checkbtn{
@@ -143,29 +170,12 @@ nav ul li a:hover{
  nav ul li a:hover{
     background-color:black;
     color: azure;
-    animation: pushup 1s 1s alternate infinite;
+
  }
+
 
 }
 /*---------- banner with navbar end-------*/
-
-/*---------- Anout section start-------*/
-.About{
-    width: 100%;
-    height:100%;
-    padding: 10px;
-}
- 
-.About .About-1 h1{
-    align-items: center;
-
-}
-.About .About-2 p{
-    align-items: center;
-    text-align: center;
-}
-
-/*----------about section end-------*/
 
 /*----------card section start-------*/
 
@@ -248,18 +258,11 @@ nav ul li a:hover{
     align-items: center;
     justify-content: space-between;
     color: aliceblue;
-    
-    
- 
 }
-.footer .btn{
-    margin-top: 10px; 
-}
+
 .footer .box-1 h4{
     text-align: center;
 }
-
-
 
 .footer .box-1 .About-2 p{
     font-size:15px;
@@ -281,7 +284,7 @@ nav ul li a:hover{
     border-radius: 100%;
  }
 
- #social-media a:hover{
+ .box-3 #social-media a:hover{
     background-color: azure;
     color: black;
  }
@@ -291,7 +294,8 @@ nav ul li a:hover{
 
 /*---------footer end-------*/
 /*--------------------------------------------Home page ending-----------------*/
-/*---------About banner-1 start-------*/
+
+/*---------About-page- banner-1 start-------*/
 .banner-1{ 
     height: 900px;
 
@@ -324,18 +328,3 @@ nav ul li a:hover{
 
 
 /*--------------------------------------------contact page ending-----------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
