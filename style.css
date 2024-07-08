@@ -235,20 +235,11 @@ font-family:Garamond;
 
 /*---------intro- end-------*/
 /*---------motivate-image start-------*/
-.motivate-image{
-    background-color:black;
-}
-
 .motivate-image img{
     padding: 10px;
     border-radius: 25px;
-
-
-
-}
-  
+} 
 /*---------motivate-image end-------*/
-
 /*---------footer start-------*/
 .footer{
     width: 100%;
